@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A824D351E6CECFB00F66EAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A824D341E6CECFB00F66EAA /* main.m */; };
 		5A824D381E6CECFB00F66EAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A824D371E6CECFB00F66EAA /* AppDelegate.m */; };
 		5A824D3B1E6CECFB00F66EAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A824D3A1E6CECFB00F66EAA /* ViewController.m */; };
 		5A824D3E1E6CECFB00F66EAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A824D3C1E6CECFB00F66EAA /* Main.storyboard */; };
 		5A824D401E6CECFB00F66EAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A824D3F1E6CECFB00F66EAA /* Assets.xcassets */; };
-		5A824D431E6CECFC00F66EAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A824D411E6CECFC00F66EAA /* LaunchScreen.storyboard */; };
 		5A824D4E1E6CECFC00F66EAA /* InputDisplayTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A824D4D1E6CECFC00F66EAA /* InputDisplayTestTests.m */; };
 		5A824D591E6CECFC00F66EAA /* InputDisplayTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A824D581E6CECFC00F66EAA /* InputDisplayTestUITests.m */; };
+		5AB250CB1E6E94F4003262CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB250CA1E6E94F4003262CF /* main.m */; };
+		5AB94D8B1E6FF60200DAD7ED /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB94D8A1E6FF60200DAD7ED /* Person.m */; };
+		5AB94DA11E71450400DAD7ED /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AB94DA01E71450400DAD7ED /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +37,12 @@
 
 /* Begin PBXFileReference section */
 		5A824D301E6CECFB00F66EAA /* InputDisplayTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InputDisplayTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A824D341E6CECFB00F66EAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5A824D361E6CECFB00F66EAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5A824D371E6CECFB00F66EAA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5A824D391E6CECFB00F66EAA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5A824D3A1E6CECFB00F66EAA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5A824D3D1E6CECFB00F66EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A824D3F1E6CECFB00F66EAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5A824D421E6CECFC00F66EAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A824D441E6CECFC00F66EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A824D491E6CECFC00F66EAA /* InputDisplayTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputDisplayTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A824D4D1E6CECFC00F66EAA /* InputDisplayTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputDisplayTestTests.m; sourceTree = "<group>"; };
@@ -51,6 +50,11 @@
 		5A824D541E6CECFC00F66EAA /* InputDisplayTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InputDisplayTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A824D581E6CECFC00F66EAA /* InputDisplayTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputDisplayTestUITests.m; sourceTree = "<group>"; };
 		5A824D5A1E6CECFC00F66EAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AB250CA1E6E94F4003262CF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5AB94D891E6FF60200DAD7ED /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		5AB94D8A1E6FF60200DAD7ED /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		5AB94D9F1E71450400DAD7ED /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		5AB94DA01E71450400DAD7ED /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,25 +105,20 @@
 		5A824D321E6CECFB00F66EAA /* InputDisplayTest */ = {
 			isa = PBXGroup;
 			children = (
+				5AB250CA1E6E94F4003262CF /* main.m */,
 				5A824D361E6CECFB00F66EAA /* AppDelegate.h */,
 				5A824D371E6CECFB00F66EAA /* AppDelegate.m */,
 				5A824D391E6CECFB00F66EAA /* ViewController.h */,
 				5A824D3A1E6CECFB00F66EAA /* ViewController.m */,
+				5AB94D891E6FF60200DAD7ED /* Person.h */,
+				5AB94D8A1E6FF60200DAD7ED /* Person.m */,
 				5A824D3C1E6CECFB00F66EAA /* Main.storyboard */,
+				5AB94D9F1E71450400DAD7ED /* TableViewController.h */,
+				5AB94DA01E71450400DAD7ED /* TableViewController.m */,
 				5A824D3F1E6CECFB00F66EAA /* Assets.xcassets */,
-				5A824D411E6CECFC00F66EAA /* LaunchScreen.storyboard */,
 				5A824D441E6CECFC00F66EAA /* Info.plist */,
-				5A824D331E6CECFB00F66EAA /* Supporting Files */,
 			);
 			path = InputDisplayTest;
-			sourceTree = "<group>";
-		};
-		5A824D331E6CECFB00F66EAA /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				5A824D341E6CECFB00F66EAA /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		5A824D4C1E6CECFC00F66EAA /* InputDisplayTestTests */ = {
@@ -246,7 +245,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A824D431E6CECFC00F66EAA /* LaunchScreen.storyboard in Resources */,
 				5A824D401E6CECFB00F66EAA /* Assets.xcassets in Resources */,
 				5A824D3E1E6CECFB00F66EAA /* Main.storyboard in Resources */,
 			);
@@ -274,8 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A824D3B1E6CECFB00F66EAA /* ViewController.m in Sources */,
+				5AB250CB1E6E94F4003262CF /* main.m in Sources */,
+				5AB94D8B1E6FF60200DAD7ED /* Person.m in Sources */,
+				5AB94DA11E71450400DAD7ED /* TableViewController.m in Sources */,
 				5A824D381E6CECFB00F66EAA /* AppDelegate.m in Sources */,
-				5A824D351E6CECFB00F66EAA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,14 +317,6 @@
 				5A824D3D1E6CECFB00F66EAA /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5A824D411E6CECFC00F66EAA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5A824D421E6CECFC00F66EAA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -507,6 +499,7 @@
 				5A824D5F1E6CECFC00F66EAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A824D601E6CECFC00F66EAA /* Build configuration list for PBXNativeTarget "InputDisplayTestTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +508,7 @@
 				5A824D621E6CECFC00F66EAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5A824D631E6CECFC00F66EAA /* Build configuration list for PBXNativeTarget "InputDisplayTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +517,7 @@
 				5A824D651E6CECFC00F66EAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

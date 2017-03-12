@@ -9,7 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
-
+{
+    
+}
+//{
+//    NSMutableArray *person;
+//}
+//
+@property (nonatomic,retain) NSMutableArray *person;
 @property (strong, nonatomic) UIWindow *window;
 
 

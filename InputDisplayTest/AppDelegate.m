@@ -10,12 +10,20 @@
 
 @interface AppDelegate ()
 
+
+
 @end
 
 @implementation AppDelegate
+@synthesize person;
+
+
+
+
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.person = [[NSMutableArray alloc]init];
     // Override point for customization after application launch.
     return YES;
 }
