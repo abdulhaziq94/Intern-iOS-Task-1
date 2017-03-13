@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
   
-    [super viewDidLoad];// testingpush
+    [super viewDidLoad];
     dobPicker = [[UIDatePicker alloc]init];
     dobPicker.datePickerMode = UIDatePickerModeDate;
     [self.dateOutput setInputView:dobPicker];
