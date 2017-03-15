@@ -16,22 +16,22 @@
 @end
 
 @implementation TableViewController
-@synthesize persons, NextPageTableView, NameTF, FnameTF, AddTF, dateOutput;
+@synthesize persons, NextPageTableView, myText;
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    persons = [[NSMutableArray alloc]init];
-    self.NextPageTableView.dataSource = self;
+//    persons = [[NSMutableArray alloc]init];
+//    self.NextPageTableView.dataSource = self;
+//    
+//    Person *person = [[Person alloc]init];
+//
+//    [persons addObject:person];
     
-    Person *person = [[Person alloc]init];
-    person.name = NameTF.text;
-    person.fname = FnameTF.text;
-    person.address = AddTF.text;
-    person.dob = dateOutput.text;
-    [persons addObject:person];
     [self.NextPageTableView reloadData];
+    
+
 
 }
 
@@ -52,7 +52,7 @@
 - (UITableViewCell *)tableView: (UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"PersonCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];

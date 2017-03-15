@@ -64,59 +64,6 @@
 
 
 
-- (IBAction)ViewTableButton:(id)sender {
-
-    Person *person = [[Person alloc]init];
-    person.name = NameTF.text;
-    person.fname = FnameTF.text;
-    person.address = AddTF.text;
-    person.dob = _dateOutput.text;
-    
-    [persons addObject:person];
-    [self.NewTableView reloadData];
-}
-
-- (IBAction)ViewBtn:(id)sender {
-    
-    
-
-    Person *person = [[Person alloc]init];
-    person.name = NameTF.text;
-    person.fname = FnameTF.text;
-    person.address = AddTF.text;
-    person.dob = _dateOutput.text;
-    
-    [persons addObject:person];
-    [self.NewTableView reloadData];
-    
-    
-
-   
-
-//    NSLog(@" %@",person);
-//    _output4.text = date;
-//    _output.text = input;
-//    _output2.text = input2;
-//    _output3.text = input3;
-    
-    
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if ([segue.identifier isEqualToString:@"viewPersons"]) {
-        
-        
-        NSIndexPath *indexPath = [self.NewTableView indexPathForSelectedRow];
-        TableViewController *tableViewController = segue.destinationViewController;
-        tableViewController.NextPageTableView = [persons objectAtIndex:indexPath.row];
-    
-      
-    }
-    
-}
-
-
-
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return persons.count;
 }
@@ -129,7 +76,7 @@
 - (UITableViewCell *)tableView: (UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"viewCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
@@ -149,7 +96,49 @@
     return cell;
 }
 
+- (IBAction)ViewBtn:(id)sender {
+    
+    
+    
+    Person *person = [[Person alloc]init];
+    person.name = NameTF.text;
+    person.fname = FnameTF.text;
+    person.address = AddTF.text;
+    person.dob = _dateOutput.text;
+    
+    [persons addObject:person];
+    [self.NewTableView reloadData];
+    
 
+
+}
+
+- (IBAction)ViewTableButton:(id)sender {
+    
+    Person *person = [[Person alloc]init];
+    person.name = NameTF.text;
+    person.fname = FnameTF.text;
+    person.address = AddTF.text;
+    person.dob = _dateOutput.text;
+    
+    [persons addObject:person];
+   
+    [self performSegueWithIdentifier:@"viewPersons" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([segue.identifier isEqualToString:@"viewPersons"]) {
+        
+        
+//        NSIndexPath *indexPath = [self.NewTableView indexPathForSelectedRow];
+        TableViewController *tableViewController = segue.destinationViewController;
+//    UIView *loadData = tableViewController.view;
+//        tableViewController.persons = [[NSMutableArray alloc]initWithObjects:self.NameTF.text, self.FnameTF.text, self.AddTF.text,self.dateOutput.text, nil];
+        tableViewController.persons = self.persons;
+        
+    }
+    
+}
 
 
 

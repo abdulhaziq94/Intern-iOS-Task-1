@@ -14,7 +14,7 @@
     NSMutableArray *persons;
 }
 @property (weak, nonatomic) IBOutlet UITextField *dateOutput;
-@property (nonatomic, retain) NSMutableArray* persons;
+@property (nonatomic, strong) NSMutableArray* persons;
 @property (weak, nonatomic) IBOutlet UILabel *Name; //nameLabel
 @property (weak, nonatomic) IBOutlet UILabel *Fname;
 @property (strong, nonatomic) IBOutlet UILabel *dob;

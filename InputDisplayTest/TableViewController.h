@@ -13,10 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *NextPageTableView;
 
-@property (nonatomic, retain) NSMutableArray* persons;
-@property (weak, nonatomic) IBOutlet UITextField *NameTF;
-@property (weak, nonatomic) IBOutlet UITextField *FnameTF;
-@property (weak, nonatomic) IBOutlet UITextView *AddTF;
-@property (weak, nonatomic) IBOutlet UITextField *dateOutput;
+@property (nonatomic, strong) NSMutableArray* persons;
+@property (weak, nonatomic) NSString *myText;
 
 @end
